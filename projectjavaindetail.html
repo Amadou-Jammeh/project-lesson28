@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity1</title>
+</head>
+
+<body>
+    <h2>type conversion</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <h3>Error handling</h3>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <h4>Arrow functions</h4>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    
+    <script>
+        var a = 20;
+        var b = 30;
+        document.getElementById("p1").innerHTML = a + b;
+        document.getElementById("p2").innerHTML = a.toString() + String(b);
+        var str = "welcome to codingal"
+        document.getElementById("p3").innerHTML = str.search("to");
+        document.getElementById("p4").innerHTML = str.replace("codingal", " javascript");
+         // function add(a,b){
+            // return a+b;
+            // }
+            try {
+                add(10, 20);
+            }
+            catch (e) {
+                document.getElementById("p5").innerHTML=e.message;
+            }
+             var sum=function add(a,b){
+                    return a+b;
+                }
+                //arrow function
+                var sum1 = (a,b,c)=>6+7+8;
+
+                document.getElementById("p7").innerHTML=sum(1100, 200);
+                document.getElementById("p8").innerHTML=sum1(2, 5, 8,);
+
+    </script>
+</body>
+
+</html>
